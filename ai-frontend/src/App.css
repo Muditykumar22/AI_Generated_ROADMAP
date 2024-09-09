@@ -1,4 +1,15 @@
 /* src/components/LanguageTopics.css */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  background: linear-gradient(135deg, #0b0014, #2b0039);
+  width: 100%;
+  position: absolute;
+}
+
 .topics-container {
   margin-top: 20px;
 }
@@ -8,7 +19,7 @@
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 5px;
-  background-color: black;
+  background-color: #fff;
 }
 
 h3 {

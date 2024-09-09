@@ -1,0 +1,110 @@
+.topics-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  /* Define keyframes for fade-in and slide-up animation */
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the .day-container class */
+.day-container {
+  width: 45%; /* Adjust width for better layout */
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(95, 86, 95, 0.618); /* Dark background */
+  color: #e6e6f8; /* Light text for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInSlideUp 0.5s ease-in-out; /* Apply animation */
+}
+  
+  /* Odd-numbered day containers align to the left */
+  .day-container:nth-child(odd) {
+    align-self: flex-start; /* Aligns odd days to the left */
+    margin-left: 5%; /* Adjust left margin */
+  }
+  
+  /* Even-numbered day containers align to the right */
+  .day-container:nth-child(even) {
+    align-self: flex-end; /* Aligns even days to the right */
+    margin-right: 5%; /* Adjust right margin */
+  }
+  
+  h2 {
+    color: white; /* Light greenish for headings */
+    margin-bottom: 15px;
+    font-size: 30px;
+
+  }
+  
+  h3 {
+    color: white; /* Light color for contrast */
+    margin: 10px;
+    padding: 28px;
+    font-size: 25px;
+  }
+  
+  p {
+    margin: 10px 0;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: rgb(67, 166, 247); /* Light green for links */
+    text-decoration: none;
+  }
+
+  h4 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    background-color: #b2a7ae; /* Button color */
+    color: black; /* Dark text on light button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.507); /* Darker green on hover */
+    color: black;
+  }
+  
+  h5 {
+    margin-top: 20px;
+    color: black; /* Light green for the PPT link section */
+  }
+  
+  /* Responsive adjustment for smaller screens */
+  @media (max-width: 768px) {
+    .day-container {
+      width: 90%; /* Take full width on smaller devices */
+    }
+  }
